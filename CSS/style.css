@@ -1,0 +1,238 @@
+/* mark header */
+.navigation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: min-content;
+}
+
+.navigation-header img{
+    width: 120px;
+}
+
+.navigation{
+    display: flex;
+    
+
+}
+
+.navigation #home-box{
+    box-sizing: border-box;
+    width: 90px;
+    border: 1px solid black;
+    border-right: none;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    text-align: center;
+
+}
+
+.navigation #package-box{
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-right: none;
+    padding: 10px;
+    
+}
+
+.navigation #call-box{
+    box-sizing: border-box;
+    border: 1px solid black;
+    padding: 10px;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    
+}
+
+
+.navigation a {
+    text-decoration: none; 
+}
+
+.navigation a:hover{
+    color: blue;
+}
+
+
+.title-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-header h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    padding-bottom: 20px;
+    color: #2c2c2c
+}
+
+.title-header h4{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 50;
+    padding-bottom: 25px;
+    color: rgb(134, 125, 125); 
+}
+
+hr{
+    border: none;
+    height: 1px;
+    color: #979797;  
+    background-color: #cfc7c7; 
+}
+
+/*MARK MAIN */
+
+#main-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.review-section {
+    flex-basis: 60%;
+    flex-grow: 0;
+    flex-direction: column;
+ 
+}
+
+.review-section q{
+    font-style: italic;
+    margin-left: 70px;
+    font-size: 17px;
+    color: rgb(129, 123, 123);
+    
+}
+
+.review-section img {
+    max-width: 100%;
+    max-height: 60%;
+    max-width: 120%;
+    margin-left: 10%;
+    gap: 20px;
+}
+
+
+
+#person-img {
+    display: flex;
+    max-width: 30px;
+    float: left;
+    width: 30px;
+    border-radius: 40px;
+    margin-left: 90px;
+    margin-right: 10px;
+}
+
+.person-profile i{
+    font-size: 13px;
+    color: #979797;
+}
+
+
+.review-section h6{
+   display: flex;
+    font-size: 14px;
+    float: left;
+    background-repeat: no-repeat;
+    
+}
+
+.review-section #person-name{
+    align-items: flex-start;
+    font-size: 15px;
+    font-style: normal;
+    margin-left: 70px;
+    
+}
+
+
+.review-section #person-job{
+    margin-left: 70px;
+    font-size: 13px;
+    color: #979797;
+}
+.message-us{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    flex-grow: 0;
+    background-color: rgb(221, 201, 201);
+    border-radius: 8px;
+    box-sizing: border-box;   
+    margin-right: 30px;
+}
+
+
+.message-us select{
+    padding: 5px 5px 5px;
+}
+
+.message-us h6, h5, .input-message-us{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.message-us h5{
+    font-size: 25px;
+    margin-left: 65px;
+    margin-top: 70px;
+}
+
+.message-us h6{
+    font-weight: 100;
+    font-size: 14px;
+    color: rgb(134, 125, 125);
+    margin-left: 65px;
+
+}
+
+.input-message-us{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.input-message-us #name-input, #email-input, #select-input, #interested-select{
+    height: 30px;
+    width: 270px;
+    border-radius: 7px;
+    padding: 8px 8px 8px;
+
+}
+
+#interested-select{
+    width: 72%;
+    height: 16%;
+    position: relative;
+}
+
+#interested-select:hover{
+    cursor: pointer;
+}
+
+button {
+    margin-top: 20px;
+    margin-right: 110px;
+    height: 35px;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(83, 83, 83);
+}
+
+.primary-button:hover{
+    cursor: pointer;
+    background-color: black;
+}
+
+.primary-button:active{
+    color: burlywood;
+}
+
