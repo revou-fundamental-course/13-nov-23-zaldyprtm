@@ -6,6 +6,7 @@
     <title>ID Travel Agent</title>
     <link rel="stylesheet" href="CSS/style.css">
     <script src="js/index.js"></script>
+   
 
 </head>
 <body>
@@ -54,13 +55,13 @@
  <br>
  <br>
  
-            <form name="messageForm" class="input-message-us" onsubmit="return validate()" method="post">
+            <form name="messageForm" class="input-message-us" onsubmit="return validateForm()" method="post">
                 <label for="name-input">Your Name:</label>
-                <input type="text" name="fname" id="name-input" placeholder="First and last name">
-                <p id="eror"></p>
+                <input type="text" name="fullname" id="name-input" placeholder="First and last name">
+                <p id="errorName"></p>
                 <label for="email-input">Email address:</label>
-                <input type="text" id="email-input" placeholder="example@mail.com">
-                <p id="error"></p>
+                <input type="email" name="userEmail" id="email-input" placeholder="example@mail.com">
+                <p id="errorEmail"></p>
                 <label for="select-input">what are you interested in?</label>
                 <select name="select" id="interested-select">
                     <option value="select-title" style="color: #979797;">Select Option</option>
@@ -68,7 +69,8 @@
                     <option value="mountain">Mountain</option>
                     <option value="island">island</option>
                 </select>
-                <button id="kirim" type="button" class="primary-button" name="submit" value="submit">SEND</button>
+                <p id="errorSelect"></p>
+                <input id="kirim" type="submit" class="primary-button" name="kirim" value="SEND">
             </form>
         </section>
     </main>
@@ -86,6 +88,6 @@
         </div>
 
     </footer>
-  
+    <script src="js/index.js"></script>
 </body>
 </html>
