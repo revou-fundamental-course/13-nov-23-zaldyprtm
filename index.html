@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ID Travel Agent</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="js/index.js"></script>
+
 </head>
 <body>
 
@@ -27,7 +29,7 @@
     <main id="main-section">
         <section class="review-section">
             <img src="assets/travel.jpg">
-            <h5><q>Liburanku menjadi menyenangkan bersama Travel Agentku</q></h5>
+            <h5>"Liburanku menjadi menyenangkan bersama Travel<br>Agentku"</h5>
             <img id="person-img" src="assets/person.png" alt="profile">
             <div class="person-profile">
               <span>Florence Hughes</span>    <br>
@@ -39,27 +41,51 @@
 
         <section class="message-us">
             <div class="sales-text">
-                <h5>Contact Us</h5>
-                <span>sales akan menghubungi anda 1x24 <br>jam setelah data kami terima</span>
+                <br>
+                <br>
+                <b>Contact Us</b> <br> <br>
+                <span>Sales akan menghubungi anda 1x24 <br> <span>jam setelah data kami terima.</span></span>
 
             </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
  
-            <form class="input-message-us">
+            <form name="messageForm" class="input-message-us" onsubmit="return validate()" method="post">
                 <label for="name-input">Your Name:</label>
-                <input type="text" id="name-input" placeholder="First and last name">
+                <input type="text" name="fname" id="name-input" placeholder="First and last name">
+                <p id="eror"></p>
                 <label for="email-input">Email address:</label>
                 <input type="text" id="email-input" placeholder="example@mail.com">
+                <p id="error"></p>
                 <label for="select-input">what are you interested in?</label>
                 <select name="select" id="interested-select">
-                    <option value="">Select Option</option>
+                    <option value="select-title" style="color: #979797;">Select Option</option>
                     <option value="beach">Beach</option>
                     <option value="mountain">Mountain</option>
                     <option value="island">island</option>
                 </select>
-                <button type="button" class="primary-button">SEND</button>
+                <button id="kirim" type="button" class="primary-button" name="submit" value="submit">SEND</button>
             </form>
         </section>
-
     </main>
+<hr>
+    <footer class="footer-section">
+       <span class="footer-offers"> Berikut ini adalah penawaran terbaik kami untuk anda </span>
+        <section class="offer-section">
+            
+            <div class="offers">
+                <ol>
+                    <li>Paket Liburan Keluarga</li>
+                    <li>Paket Liburan Kantor</li>
+                    <li>Paket Liburan Akhir Tahun</li>
+                </ol>
+        </div>
+
+    </footer>
+  
 </body>
 </html>
