@@ -8,7 +8,7 @@
 }
 
 .navigation-header img{
-    width: 120px;
+    width: 70px;
 }
 
 .navigation{
@@ -83,6 +83,24 @@
     .message-us {
         flex-direction: column;
         flex-wrap: wrap;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 300px)   {
+    .input-message-us{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width:300px)   {
+    .main-wrapper   {
+        display: flex;
+        flex-direction: column;
     }
 }
 
