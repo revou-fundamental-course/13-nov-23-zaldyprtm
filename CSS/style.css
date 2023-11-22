@@ -106,7 +106,7 @@ hr{
     border: none;
     height: 1px;
     color: #979797;  
-    background-color: #cfc7c7; 
+    background-color: #b9a9a9; 
 }
 
 /*MARK MAIN */
@@ -121,6 +121,7 @@ hr{
 .slideshow-container    {
     position: relative;
     margin: auto;
+    
     max-width: 1000px;
     
 }
@@ -134,7 +135,7 @@ hr{
 .arrow button{
     border-radius: 7px;
     height: 30px;
-    background-color: rgb(121, 121, 117);
+    background-color: rgb(255, 255, 243);
 }
 
 .review-section {
@@ -159,7 +160,8 @@ hr{
     max-width: 120%;
     margin-left: 10%;
     gap: 20px;
-    display: flex;
+    border-radius: 10px;
+    
 }
 
 
@@ -349,6 +351,13 @@ hr{
     color: burlywood;
 }
 
+.hr-footer  {
+    width: 100px;
+    margin-left: 400px;
+    height: 2px;
+    background-color: #271e1e;
+}
+
 .footer-section{
     display: flex;
     flex-direction: column;
@@ -357,9 +366,13 @@ hr{
 }
 
 .footer-offers{
-    margin-left: 70px;
+    margin-left: 90px;
     font-size: 19px;
     color: #797575;
+}
+
+.footer-offers-br   {
+    margin-right: 30px;
 }
 
 li{

@@ -13,16 +13,20 @@ function validateForm() {
     }
 }
 
-let slideIndex = 1;
+
+
+var slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n)  {
         showSlides(slideIndex += n);
 }
 
+
 function showSlides(n)  {
     var i;
-    let slides = document.getElementsByClassName("mySlide");
+    let slides = document.getElementsByClassName("img-slide");
+    
     if (n > slides.length) {slideIndex = 1}
    else if (n < 1) {slideIndex = slides.length}
 
@@ -30,8 +34,9 @@ function showSlides(n)  {
        slides[i].style.display = 'none';
     }
     
-
-    slides[slideIndex - 1].style.display = "block";
-    
+    slides[slideIndex - 1].style.display = 'block';
 }
 
+setInterval(() =>   {
+    plusSlides(1);
+}, 2000);
