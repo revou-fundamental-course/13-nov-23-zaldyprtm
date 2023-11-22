@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<header>
+<header class="header-wrapper">
         <section class="navigation-header">
             <img src="assets/logo.jpg">
             <nav class="navigation">
@@ -27,9 +27,29 @@
     </section>
 </header>
 
-    <main id="main-section">
+    <main id="main-section" class="main-wrapper">
         <section class="review-section">
-            <img src="assets/travel.jpg">
+        <div class="slideshow-container">
+        <div class="image-slide">
+            <img src="assets/travel.jpg" style="width: 100%;">
+        </div>      
+
+        <div class="image-slide">
+            <img src="assets/sea.jpg" style=" width: 100%;">
+        </div>
+
+        <div class="image-slide">
+            <img src="assets/mountain.jpg" style="width: 100%;">
+        </div>
+<div class="arrow">
+ <button onclick="plusSlides(-1)"><</button>
+ <button onclick="plusSlides(1)">></button>
+</div>
+
+
+        </div>
+        <br>
+ 
             <h5>"Liburanku menjadi menyenangkan bersama Travel<br>Agentku"</h5>
             <img id="person-img" src="assets/person.png" alt="profile">
             <div class="person-profile">
@@ -37,10 +57,10 @@
                 <i>Ibu Rumah Tangga, 28</i>
     
             </div>
-         
+        </div>
         </section>
 
-        <section class="message-us">
+        <section class="message-us" >
             <div class="sales-text">
                 <br>
                 <br>
@@ -56,13 +76,13 @@
  <br>
  
             <form name="messageForm" class="input-message-us" onsubmit="return validateForm()" method="post">
-                <label for="name-input">Your Name:</label>
+                <label for="name-input" id="yourname">Your Name:</label>
                 <input type="text" name="fullname" id="name-input" placeholder="First and last name">
                 <p id="errorName"></p>
-                <label for="email-input">Email address:</label>
+                <label for="email-input" id="emailadd">Email address:</label>
                 <input type="email" name="userEmail" id="email-input" placeholder="example@mail.com">
                 <p id="errorEmail"></p>
-                <label for="select-input">what are you interested in?</label>
+                <label for="select-input" id="selectid">What are you interested in?</label>
                 <select name="select" id="interested-select">
                     <option value="select-title" style="color: #979797;">Select Option</option>
                     <option value="beach">Beach</option>
@@ -81,7 +101,7 @@
             
             <div class="offers">
                 <ol>
-                    <li>Paket Liburan Keluarga</li>
+                    <li>Paket Mewah Liburan Keluarga </li>
                     <li>Paket Liburan Kantor</li>
                     <li>Paket Liburan Akhir Tahun</li>
                 </ol>

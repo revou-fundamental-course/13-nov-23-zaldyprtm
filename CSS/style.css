@@ -66,6 +66,27 @@
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 300px) {
+    .header-wrapper{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 300px)   {
+    .main-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 300px)   {
+    .message-us {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+
 .title-header h1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
@@ -92,15 +113,34 @@ hr{
 
 #main-section {
     display: flex;
+   
     flex-direction: row;
     gap: 150px;
 }
 
+.slideshow-container    {
+    position: relative;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.arrow  {
+    align-items: center;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+
+.arrow button{
+    border-radius: 7px;
+    height: 30px;
+    background-color: rgb(121, 121, 117);
+}
 
 .review-section {
     flex-basis: 60%;
     flex-grow: 0;
     flex-direction: column;
+    flex-wrap: wrap;
  
 }
 
@@ -118,12 +158,13 @@ hr{
     max-width: 120%;
     margin-left: 10%;
     gap: 20px;
+    display: flex;
 }
 
 
 
 #person-img {
-    display: flex;
+   
     max-width: 30px;
     float: left;
     width: 30px;
@@ -174,6 +215,7 @@ hr{
 .message-us{
     display: flex;
     flex-direction: column;
+    
     flex-basis: 40%;
     flex-grow: 0;
     background-color: rgb(221, 201, 201);
@@ -194,7 +236,7 @@ hr{
 
 .message-us b{
     font-size: 25px;
-    margin-left: 55px;
+    margin-left: 85px;
     margin-top: 70px;
     padding-bottom: 30px;
 }
@@ -210,7 +252,7 @@ hr{
 .message-us span{
     font-family: tahoma;
     margin: auto;
-    margin-left: 56px;
+    margin-left: 85px;
     text-wrap: wrap;
     color: #979797;    
 }
@@ -218,6 +260,7 @@ hr{
 .input-message-us{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
     margin: 0 auto;
     width: 400px;
@@ -229,6 +272,21 @@ hr{
     border-radius: 7px;
     padding: 8px 8px 8px;
 
+}
+
+#yourname   {
+    margin-right: 210px;
+    font-weight: bold;
+}
+
+#emailadd   {
+    margin-right: 190px;
+    font-weight: bold;
+}
+
+#selectid   {
+    margin-right: 100px;
+    font-weight: bold;
 }
 
 #errorName  {
@@ -275,6 +333,12 @@ hr{
     background-color: rgb(83, 83, 83);
 }
 
+.primary-button {
+    width: 300px;
+    margin-left: 110px;
+    margin-bottom: 50px;
+}
+
 .primary-button:hover{
     cursor: pointer;
     background-color: black;
@@ -312,15 +376,17 @@ li{
 
 
 ol li{
-list-style-type: circle;
+    list-style-type: circle;
+    list-style-position: inside;
     position: relative;
-    color: #fff;
+    color: #0c0b0b;
+    
 
    
 }
 
 ol li:hover{
-    color: chartreuse;
+    color: rgb(97, 9, 179);
     cursor: pointer;
     background-repeat: no-repeat;
 }
